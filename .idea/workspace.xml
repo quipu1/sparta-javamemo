@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ceb5784-c51e-4cd7-b9d8-585267b3c2a2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memo/src/main/java/memo/Memo.java" beforeDir="false" afterPath="$PROJECT_DIR$/memo/src/main/java/memo/Memo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memo/src/main/java/memo/MemoList.java" beforeDir="false" afterPath="$PROJECT_DIR$/memo/src/main/java/memo/MemoList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memo/.idea/sonarlint/issuestore/c/f/cf9d014f73a90afeb99eb981b8eac9998bc87525" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/memo/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/memo/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +61,7 @@
       <updated>1669168897949</updated>
       <workItem from="1669168899283" duration="2182000" />
       <workItem from="1669171095195" duration="4000" />
-      <workItem from="1669171112644" duration="3310000" />
+      <workItem from="1669171112644" duration="7680000" />
     </task>
     <servers />
   </component>
@@ -78,5 +78,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/memo/src/main/java/memo/MemoList.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
