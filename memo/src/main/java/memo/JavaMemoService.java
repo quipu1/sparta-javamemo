@@ -13,8 +13,17 @@ public class JavaMemoService implements MemoService{
     }
 
     @Override
+    public void delMemo(int id, int password) {
+       memoRepository.removeMemo(id, password);
+    }
+
+    @Override
     public void changeMemo(int id, int password, String newPost) {
         memoRepository.editMemo(id, password, newPost);
+    }
+    @Override
+    public void postMemo(String name, int password, String post) {
+        memoRepository.saveMemo(name, password, post);
     }
 
 }

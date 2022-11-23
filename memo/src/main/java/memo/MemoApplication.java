@@ -15,7 +15,7 @@ public class MemoApplication {
         while(true) {
             uinterface.inputList();
             System.out.print("입력 > ");
-            String input = scanner.nextLine();
+            String input = scanner.next();
             switch (input) {
                 case "1":
                     System.out.println("1 입력");
@@ -35,21 +35,21 @@ public class MemoApplication {
                 case "3":
                     System.out.println("3 수정");
                     System.out.print("글 번호: ");
-                    int id = scanner.nextInt();
+                    int id3 = scanner.nextInt();
                     System.out.print("비밀번호: ");
-                    int password = scanner.nextInt();
+                    int password3 = scanner.nextInt();
                     System.out.print("메모: ");
-                    String post = scanner.nextLine();
-                    memoService.changeMemo(id, password, post);
+                    String post3 = scanner.next();
+                    memoService.changeMemo(id3, password3, post3);
                     break;
                 case "4":
                     System.out.println("4 삭제");
                     System.out.println("삭제하면 돌이킬 수 없으니 신중히 삭제해 주세요");
                     System.out.print("글 번호: ");
-                    int id = scanner.nextInt();
+                    int id4 = scanner.nextInt();
                     System.out.print("비밀번호: ");
-                    int password = scanner.nextInt();
-                    memoService.delMemo(id, password);
+                    int password4 = scanner.nextInt();
+                    memoService.delMemo(id4, password4);
                     break;
                 case "q":
                     System.out.println("프로그램이 종료되었습니다");
