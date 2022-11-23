@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 
-public class Memo {
+public class Memo implements Comparable<Memo>{
 
     int id = 0;
     private String name;

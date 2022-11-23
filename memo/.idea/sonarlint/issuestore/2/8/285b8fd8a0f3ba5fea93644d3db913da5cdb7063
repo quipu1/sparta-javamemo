@@ -1,8 +1,0 @@
-
-w
-java:S1488+"\Immediately return this expression instead of assigning it to the temporary variable "memo".(ÒÔèúÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(‰»èÚ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(ÌÈ–
-N	java:S106"9Replace this use of System.out or System.err by a logger.(²”Áã
-S	java:S106!"9Replace this use of System.out or System.err by a logger.(—«¬¢ûÿÿÿÿ
-N	java:S106$"9Replace this use of System.out or System.err by a logger.(†õ«ÿ
