@@ -4,11 +4,11 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 
-public class Memo implements Comparable<Memo>{
+public class Memo {
 
     int id = 0;
     private String name;
-    private int password;
+    final int password;
     String post;
     String date;
 
@@ -21,14 +21,22 @@ public class Memo implements Comparable<Memo>{
     }
 
     public String getDate() {
-        return date;
+        return this.date;
     }
 
-    public String setDate() {
+//    public static String setDate() {
+//        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy/MM/dd h:mm");
+//        String now = dateTimeFormatter.format(LocalDateTime.now());
+//        //꼬이면 toString 사용해보기
+//        return now;
+//    }
+    public static String setDate() {
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy/MM/dd h:mm");
-        String now = dateTimeFormatter.format(LocalDateTime.now());
-        //꼬이면 toString 사용해보기
-        return now;
+        return dateTimeFormatter.format(LocalDateTime.now());
+}
+
+    public void editDate(String date) {
+        this.date = date;
     }
 
     public int getId() {
