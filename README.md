@@ -22,7 +22,7 @@ Java를 통해 메모장을 구현합니다.
 
 - 프로그램 종료
 
-  
+  <br>
 
 ### ✨ 개발 인원 및 역할
 
@@ -38,13 +38,13 @@ Java를 통해 메모장을 구현합니다.
 
 최승호 : 팀원, 목록 보기, 프로젝트 실행(main)
 
-
+<br>
 
 ### 📌 사용된 기술
 
 프론트, 백, DB : Java
 
-
+<br>
 
 ### 📌 프레임워크
 
@@ -90,7 +90,7 @@ q 종료
 프로그램이 종료되었습니다.
 ```
 
-
+<br>
 
 ### 📌 Field
 
@@ -102,9 +102,7 @@ q 종료
 |   게시글    | string post  |
 |   작성일    | string date  |
 
-
-
-
+<br>
 
 ### 📌 Method
 
@@ -115,9 +113,7 @@ q 종료
 | 메모 수정  | editMemo(int id, int password, String newPost) / changeMemo(...) |
 | 메모 삭제  |       removeMemo(int id, int password) / delMemo(...)        |
 
-
-
-
+<br>
 
 ### 🔥 결과
 
