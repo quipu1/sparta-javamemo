@@ -18,7 +18,6 @@ public class Memo {
         this.password = password;
         this.post = post;
         this.date = setDate();
-
     }
 
     public String getDate() {

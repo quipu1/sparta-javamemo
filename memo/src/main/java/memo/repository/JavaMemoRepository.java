@@ -44,4 +44,5 @@ public class JavaMemoRepository implements MemoRepository {
         Memo memo = this.memoDB.get(memoID);
         return memo;
     }
+
 }
