@@ -38,6 +38,7 @@ public class JavaMemoRepository implements MemoRepository {
                     memo.setPost(newPost);
                 } else {
                     System.out.println("비밀번호가 틀렸습니다.");
+                    return;
                 }
                 System.out.println("글 번호" + memo.getId() + "가 수정되었습니다.");
                 return;
@@ -56,8 +57,9 @@ public class JavaMemoRepository implements MemoRepository {
                     memoDB.remove(i);
                 } else {
                     System.out.println("비밀번호가 틀렸습니다.");
+                    return;
                 }
-                System.out.println("글 번호" + memo.getId() + "가 삭제되었습니다.");
+                System.out.println("글 번호 " + memo.getId() + "가 삭제되었습니다.");
                 return;
             }
         }
