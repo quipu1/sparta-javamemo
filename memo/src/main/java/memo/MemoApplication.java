@@ -18,14 +18,15 @@ public class MemoApplication {
             String input = scanner.next();
             switch (input) {
                 case "1":
-                    System.out.println("1 입력");
+                    System.out.println("1 추가");
                     System.out.print("이름: ");
                     String name = scanner.next();
                     System.out.println("비밀번호는 6글자 이내 숫자로 입력하시오.");
                     System.out.print("비밀번호: ");
                     int password = scanner.nextInt();
                     System.out.print("메모: ");
-                    String post = scanner.next();
+                    scanner.nextLine();
+                    String post = scanner.nextLine();
                     memoService.postMemo(name, password, post);
                     break;
                 case "2":
@@ -39,7 +40,8 @@ public class MemoApplication {
                     System.out.print("비밀번호: ");
                     int password3 = scanner.nextInt();
                     System.out.print("메모: ");
-                    String post3 = scanner.next();
+                    scanner.nextLine();
+                    String post3 = scanner.nextLine();
                     memoService.changeMemo(id3, password3, post3);
                     break;
                 case "4":

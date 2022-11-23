@@ -6,14 +6,16 @@ import java.time.format.DateTimeFormatter;
 
 public class Memo {
 
-    int id = 0;
+    static int cnt = 0;
+    int id;
     private String name;
     final int password;
     String post;
     String date;
 
     public Memo(String name, int password, String post) {
-        this.id += 1;
+        cnt++;
+        this.id = cnt;
         this.name = name;
         this.password = password;
         this.post = post;
