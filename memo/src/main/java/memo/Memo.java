@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 
-public class Memo {
+public class Memo implements Comparable<Memo>{
 
     int id = 0;
     private String name;
