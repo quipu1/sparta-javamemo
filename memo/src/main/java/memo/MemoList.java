@@ -11,7 +11,6 @@ public class MemoList {
     public MemoList(List<Memo> memoList) {
         this.memoList = memoList;
     }
-//    List<Memo> memoList = new ArrayList<Memo>(); //여러 건의 메모를 저장하는 클래스 이다.
     static int count= 0;
 
     // 작성 최신 순으로 메모를 출력한다.
