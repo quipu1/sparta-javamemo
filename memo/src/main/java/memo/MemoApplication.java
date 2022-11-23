@@ -1,20 +1,23 @@
 package memo;
 
 
+import memo.presentation.Uinterface;
+import memo.presentation.UserInterface;
+
 import java.util.Scanner;
 
 public class MemoApplication {
     public static void main(String[] args) {
         MemoService memoService = new JavaMemoService();
+        Uinterface uinterface = new UserInterface();
         Scanner scanner = new Scanner(System.in);
-        boolean run = True;
 
-        while(run) {
-            //UI 메소드 자리
+        while(true) {
+            uinterface.inputList();
             System.out.print("입력 > ");
-            int input = scanner.nextInt();
+            String input = scanner.nextLine();
             switch (input) {
-                case 1:
+                case "1":
                     System.out.println("1 입력");
                     System.out.print("이름: ");
                     String name = scanner.next();
@@ -25,19 +28,32 @@ public class MemoApplication {
                     String post = scanner.next();
                     memoService.postMemo(name, password, post);
                     break;
-                case 2:
+                case "2":
                     System.out.println("2 목록 보기");
-                    memoService.getMemo();
+                    memoService.showMemoList();
                     break;
-                case 3:
+                case "3":
                     System.out.println("3 수정");
-                    System.out.print("아이디 > ");
+                    System.out.print("글 번호: ");
                     int id = scanner.nextInt();
-                    if(!memoService.isExist()) {
-                        System.out.println("글이 존재하지 않습니다.");
-                        break;
-                    }
-                    System.out.print();
+                    System.out.print("비밀번호: ");
+                    int password = scanner.nextInt();
+                    System.out.print("메모: ");
+                    String post = scanner.nextLine();
+                    memoService.changeMemo(id, password, post);
+                    break;
+                case "4":
+                    System.out.println("4 삭제");
+                    System.out.println("삭제하면 돌이킬 수 없으니 신중히 삭제해 주세요");
+                    System.out.print("글 번호: ");
+                    int id = scanner.nextInt();
+                    System.out.print("비밀번호: ");
+                    int password = scanner.nextInt();
+                    memoService.delMemo(id, password);
+                    break;
+                case "q":
+                    System.out.println("프로그램이 종료되었습니다");
+                    System.exit(0);
             }
         }
     }

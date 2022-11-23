@@ -10,7 +10,6 @@ public class JavaMemoService implements MemoService{
     @Override
     public void changeMemo(int id, int password, String newPost) {
         memoRepository.editMemo(id, password, newPost);
-
     }
 
 }

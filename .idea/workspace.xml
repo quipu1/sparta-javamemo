@@ -31,6 +31,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -61,7 +68,7 @@
       <updated>1669168897949</updated>
       <workItem from="1669168899283" duration="2182000" />
       <workItem from="1669171095195" duration="4000" />
-      <workItem from="1669171112644" duration="8954000" />
+      <workItem from="1669171112644" duration="15365000" />
     </task>
     <servers />
   </component>
@@ -78,16 +85,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/memo/src/main/java/memo/MemoList.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -15,7 +15,6 @@ public class Memo {
         this.name = name;
         this.password = password;
         this.post = post;
-
     }
     
     public String setDate() {
