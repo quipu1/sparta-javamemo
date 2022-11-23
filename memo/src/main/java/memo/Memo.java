@@ -5,6 +5,7 @@ import java.time.format.DateTimeFormatter;
 
 
 public class Memo {
+
     String id;
     private String name;
     private int password;
@@ -62,5 +63,6 @@ public class Memo {
         }
         return 0;
     }
+
 
 }
