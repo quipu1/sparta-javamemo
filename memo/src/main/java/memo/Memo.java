@@ -2,7 +2,6 @@ package memo;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
 
 
 public class Memo {
@@ -12,13 +11,13 @@ public class Memo {
     private int password;
     String post;
     String date;
+
     public Memo(String name, int password, String post) {
         this.id += 1;
         this.name = name;
         this.password = password;
         this.post = post;
         this.date = setDate();
-
     }
 
     public String getDate() {
@@ -59,17 +58,5 @@ public class Memo {
     public void setPost(String post) {
         this.post = post;
     }
-
-    @Override
-    public int compareTo(memo.Memo m) {
-        int comparedResult = this.date.compareTo(m.date);
-        if (comparedResult > 0) {
-            return 1;
-        } else if (comparedResult < 0) {
-            return -1;
-        }
-        return 0;
-    }
-
 
 }

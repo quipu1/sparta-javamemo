@@ -18,7 +18,6 @@ public class JavaMemoRepository implements MemoRepository {
             System.out.println("-------------------------------------");
         }
     }
-
     @Override
     public void editMemo(int memoId, int password, String newPost) {
 
