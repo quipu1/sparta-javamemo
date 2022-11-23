@@ -32,10 +32,10 @@ public class JavaMemoRepository implements MemoRepository {
                 } else {
                     System.out.println("비밀번호가 틀렸습니다.");
                 }
-            } else {
-                System.out.println("해당 메모가 없습니다.");
+                return;
             }
         }
+        System.out.println("해당 메모가 없습니다.");
     }
 
     //수정에서 안 쓰는 부분인데 다른 분들도 안 쓰면 지우기
