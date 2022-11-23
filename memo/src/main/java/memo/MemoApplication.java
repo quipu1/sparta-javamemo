@@ -53,6 +53,7 @@ public class MemoApplication {
                     break;
                 case "q":
                     System.out.println("프로그램이 종료되었습니다");
+                    uinterface.endUI();
                     System.exit(0);
             }
         }
