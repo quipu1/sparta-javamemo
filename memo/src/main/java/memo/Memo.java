@@ -2,22 +2,29 @@ package memo;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
 
 
 public class Memo {
 
-    String id;
+    int id = 0;
     private String name;
     private int password;
     String post;
-    String date = setDate();
+    String date;
     public Memo(String name, int password, String post) {
+        this.id += 1;
         this.name = name;
         this.password = password;
         this.post = post;
+        this.date = setDate();
 
     }
-    
+
+    public String getDate() {
+        return date;
+    }
+
     public String setDate() {
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy/MM/dd h:mm");
         String now = dateTimeFormatter.format(LocalDateTime.now());
@@ -25,11 +32,11 @@ public class Memo {
         return now;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

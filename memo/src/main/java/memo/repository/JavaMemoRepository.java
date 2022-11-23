@@ -11,12 +11,21 @@ public class JavaMemoRepository implements MemoRepository {
     private List<Memo> memoDB = new ArrayList<>();
 
     @Override
+    public void getMemoList() {
+        for (Memo memo : this.memoDB) {
+            System.out.println(memo.getName() + "|" + memo.getDate());
+            System.out.println(memo.getPost());
+            System.out.println("-------------------------------------");
+        }
+    }
+
+    @Override
     public void editMemo(int memoId, int password, String newPost) {
 
         // db에 있는 메모인지 확인
         for (Memo memo : this.memoDB) {
             // db에 해당 메모가 있을 때,
-            if (memo.getId().equals(memoId)) {
+            if (memo.getId() == memoId) {
                 // password 체크
                 if (memo.getPassword() == password) {
                     memo.setDate();
