@@ -1,5 +1,5 @@
 package memo;
 
 public interface MemoService {
-    void editMemo(int id, String newPost);
+    void changeMemo(int id, int password, String newPost);
 }
