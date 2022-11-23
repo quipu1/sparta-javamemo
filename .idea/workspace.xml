@@ -61,7 +61,7 @@
       <updated>1669168897949</updated>
       <workItem from="1669168899283" duration="2182000" />
       <workItem from="1669171095195" duration="4000" />
-      <workItem from="1669171112644" duration="7680000" />
+      <workItem from="1669171112644" duration="8954000" />
     </task>
     <servers />
   </component>
@@ -84,7 +84,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/memo/src/main/java/memo/MemoList.java</url>
-          <line>10</line>
+          <line>14</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
