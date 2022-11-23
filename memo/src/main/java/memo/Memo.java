@@ -24,12 +24,6 @@ public class Memo {
         return this.date;
     }
 
-//    public static String setDate() {
-//        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy/MM/dd h:mm");
-//        String now = dateTimeFormatter.format(LocalDateTime.now());
-//        //꼬이면 toString 사용해보기
-//        return now;
-//    }
     public static String setDate() {
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy/MM/dd h:mm");
         return dateTimeFormatter.format(LocalDateTime.now());
@@ -43,16 +37,8 @@ public class Memo {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public int getPassword() {
