@@ -8,7 +8,9 @@ public class JavaMemoService implements MemoService{
     private final MemoRepository memoRepository = new JavaMemoRepository();
 
     @Override
-    public void editMemo(Memo memo, String newPost) {
-        memoRepository.editMemo(Memo memo, String newPost);
+    public void changeMemo(int id, int password, String newPost) {
+        memoRepository.editMemo(id, password, newPost);
+
     }
+
 }
